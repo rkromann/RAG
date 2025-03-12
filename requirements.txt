@@ -8,3 +8,4 @@ markdown-it-py
 mdit_plain
 python-docx
 sentence-transformers
+python-dotenv
