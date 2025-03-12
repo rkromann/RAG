@@ -1,0 +1,10 @@
+streamlit
+haystack-ai
+pinecone-haystack
+google-api-python-client
+grpcio
+pypdf
+markdown-it-py 
+mdit_plain
+python-docx
+sentence-transformers
