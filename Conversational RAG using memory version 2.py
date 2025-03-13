@@ -117,11 +117,6 @@ conversational_rag.connect("query_rephrase_llm.replies", "list_to_str_adapter")
 conversational_rag.connect("list_to_str_adapter", "text_embedder.text")  # Connect to embedder
 conversational_rag.connect("text_embedder", "retriever.query_embedding")  # Pass embedding to retriever
 
-# Embed documents and store in Pinecone - this would typically be done in a separate process
-# Uncomment this if you need to embed documents as part of the pipeline
-# conversational_rag.add_component("document_writer", DocumentWriter(document_store))
-# conversational_rag.connect("document_embedder", "document_writer")
-
 # connections for RAG
 conversational_rag.connect("retriever.documents", "prompt_builder.documents")
 conversational_rag.connect("prompt_builder.prompt", "llm.messages")

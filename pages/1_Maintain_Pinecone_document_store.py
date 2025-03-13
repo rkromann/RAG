@@ -14,6 +14,8 @@ from pinecone.grpc import PineconeGRPC as Pinecone
 from dotenv import load_dotenv
 load_dotenv()
 
+st.set_page_config(page_title="Hello", page_icon="foaroedweb.png")
+
 container1 = st.container(border=True)
 container2 = st.container(border=True)
 

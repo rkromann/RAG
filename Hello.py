@@ -1,10 +1,7 @@
 import streamlit as st
 import torch
 
-st.set_page_config(
-    page_title="Hello",
-    page_icon="👋",
-)
+st.set_page_config(page_title="Hello", page_icon="foaroedweb.png")
 
 st.write("# Welcome to RAG system demo")
 
