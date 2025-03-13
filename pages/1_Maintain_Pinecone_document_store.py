@@ -47,6 +47,7 @@ with st.form("inputform", clear_on_submit=True, enter_to_submit=False):
 
 if files:
 
+	os.makedirs(pathlib.Path(__file__).parent.parent.joinpath('sources'), exist_ok=True)
 	os.chdir(pathlib.Path(__file__).parent.parent.joinpath('sources'))
 
 	for file in files:
